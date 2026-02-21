@@ -29,3 +29,19 @@ Looking at which user interactions are associated with JS heap growth is a good 
 The **“JS heap”** graph here tells us the size of JavaScript heap memory currently in use over time. However, it doesn’t tell us which objects in memory have grown over time.
 
 For that, we need a heap snapshot from the **Memory** tab.
+
+## Dev Tools - Memory Tab
+### Heap Snapshot
+>Taking a photo of memory at one exact moment
+
+It shows:
+1. All JS objects currently in memory
+2. How many of each
+3. How big they are
+4. Who is referencing whom
+
+**When to use it**
+1. Memory keeps growing
+2. We suspect a leak
+3. We want to compare before vs after
+
