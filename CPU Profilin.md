@@ -61,7 +61,10 @@ def my_program(a, b, c):
 ```
 
 #### Visualizing the profile with SnakeViz
-`python -m snakeviz create_conversation_note.prof`
+`python -m snakeviz program.prof`
 
 <img width="1900" height="909" alt="image" src="https://github.com/user-attachments/assets/514349d6-6751-4dc6-b5ef-3ec64f41e36e" />
+
+### React Dev Tools Profiler
+React Dev Tools have a profiler support that can help us profiling our React frontend Apps. It can determine rerenders, why any component rerendered and so many other insights including flamegraphs.
 
