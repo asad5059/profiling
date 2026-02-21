@@ -33,3 +33,35 @@ When we profile a function or any API we see some terms like:
 4. `cumtime`: time spent in the function including children
 6. `percall (next to cumtime)`: It helps understand average total cost including children.
 
+### SnakeViz
+SnakeViz is a browser based graphical viewer for the output of Python’s cProfile module. We can create a profile using cProfile inside the program itself or using command line.
+
+#### Creating profile using cProfile in command line
+`python -m cProfile -o program.prof my_program.py`
+
+#### Creating profile using cProfile in the program itself
+
+```python
+import cProfile
+
+def my_program(a, b, c):
+
+    profiler = cProfile.Profile()
+    profiler.enable()    
+
+    res = op1(a, c)
+
+    for i in 10:
+      res = res + op2(b, i)
+
+    profiler.disable()
+    profiler.dump_stats("program.prof")
+
+    return res;
+```
+
+#### Visualizing the profile with SnakeViz
+`python -m snakeviz create_conversation_note.prof`
+
+<img width="1900" height="909" alt="image" src="https://github.com/user-attachments/assets/514349d6-6751-4dc6-b5ef-3ec64f41e36e" />
+
