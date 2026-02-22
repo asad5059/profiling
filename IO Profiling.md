@@ -1,4 +1,4 @@
-# I/O Profiling for Beginners (Django + React)
+# I/O Profiling
 
 When our app feels slow, it's tempting to just guess what's wrong and start fixing things. But more often than not, we end up optimizing the wrong part and wasting hours. That's exactly the problem I/O profiling solves.
 
