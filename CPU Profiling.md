@@ -7,7 +7,7 @@ Measuring how much execution time each function or code path consumes while our 
 * Is my React component re-rendering too much?
 * Is my Django view doing heavy computation?
 
-If we run a Django endpoint and it takes 5 seconds, what would we want to know? Not `it took 5 seconds.` But: `Which function inside that endpoint is responsible for most of those 2 seconds?` That’s exactly what CPU profiling tells you.
+If we run a Django endpoint and it takes 5 seconds, what would we want to know? Not `it took 5 seconds.` But: `Which function inside that endpoint is responsible for most of those 5 seconds?` That’s exactly what CPU profiling tells you.
 
 Let's say we have an API called `compute_kpi` in our django app inside our view. This API consists of:
 * DB query
